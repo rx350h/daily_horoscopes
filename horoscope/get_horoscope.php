@@ -74,7 +74,7 @@ foreach($sign_arr as $key => $value){
 
 $content = json_encode($response, true);
 
-appendOrCreateFile('/var/www/html/for-example.shop/for-example.shop/horoscope/horoscope.json', $content);
+appendOrCreateFile('horoscope.json', $content);
 
 function appendOrCreateFile($filePath, $content) {
 	// Если файл не существует, создаем его
