@@ -7,7 +7,7 @@
     <title>Daily Horoscope</title>
 </head>
 <body>
-<script src="horoscope_new.js"></script>
+<script src="./assets/horoscope_new.js"></script>
 
 <form class='app-horoscope d-flex justify-content-center align-items-center' style='margin-bottom: 50px;'>
     <div class='col-md-12 shadow-sm p-5'>
