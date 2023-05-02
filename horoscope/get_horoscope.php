@@ -77,17 +77,13 @@ $content = json_encode($response, true);
 appendOrCreateFile('horoscope.json', $content);
 
 function appendOrCreateFile($filePath, $content) {
-	// Если файл не существует, создаем его
+
 	if (!file_exists($filePath)) {
 	  $handle = fopen($filePath, 'w+');
 	  fclose($handle);
 	}
-	
-	// Открываем файл на запись и перемещаем указатель в конец файла
 	$handle = fopen($filePath, 'w+');
-	// Записываем содержимое в файл
 	fwrite($handle, $content);
-	// Закрываем файл
 	fclose($handle);
 }
 
